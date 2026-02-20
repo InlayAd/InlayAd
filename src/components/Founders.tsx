@@ -7,7 +7,7 @@ const founders = [
         bio: (
             <div className="space-y-4">
                 <p>
-                    I'm an engineer at heart—I obsess over building intelligent systems that scale and impact millions. Currently completing my 4th year in Math & Scientific Computing at IIT Kanpur.
+                    I'm an engineer at heart, I obsess over building intelligent systems that scale and impact millions. Currently completing my 4th year in Math & Scientific Computing at IIT Kanpur.
                 </p>
                 <p>
                     Before Inlay, I architected data infrastructure scaling to <strong>15cr+ households</strong> for the Indian Government, and single-handedly built and scaled a consumer platform to <strong>50k+ users</strong>. I've also spent time deep in the weeds of quant trading, leveraging Deep Learning to aggressively optimize quantitative strategies.
