@@ -19,7 +19,7 @@ const founders = [
         ),
         email: "devanshv22@iitk.ac.in",
         linkedin: "https://www.linkedin.com/in/devanshv17/",
-        image: "/founder.jpg"
+        image: "/founder.jpeg"
     }
 ];
 
