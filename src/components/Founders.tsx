@@ -10,7 +10,7 @@ const founders = [
                     I'm an engineer at heart—I obsess over building intelligent systems that scale and impact millions. Currently completing my 4th year in Math & Scientific Computing at IIT Kanpur.
                 </p>
                 <p>
-                    Before Inlay, I architected data infrastructure scaling to <strong>15cr+ households</strong> for the Indian Government, and single-handedly built and scaled a consumer platform to <strong>50k+ users</strong>. I've also spent time deep in the weeds of quant trading, leveraging Deep Learning (LSTM & XGBoost) to aggressively optimize quantitative strategies.
+                    Before Inlay, I architected data infrastructure scaling to <strong>15cr+ households</strong> for the Indian Government, and single-handedly built and scaled a consumer platform to <strong>50k+ users</strong>. I've also spent time deep in the weeds of quant trading, leveraging Deep Learning to aggressively optimize quantitative strategies.
                 </p>
                 <p>
                     Now, I am combining my deep expertise in AI systems, robust multi-agent deployments, and LLM optimization to completely reinvent how brands connect with creators.
