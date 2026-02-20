@@ -1,4 +1,4 @@
-import { Mail, Linkedin } from 'lucide-react';
+import { Mail, Linkedin, Globe } from 'lucide-react';
 
 const founders = [
     {
@@ -17,8 +17,9 @@ const founders = [
                 </p>
             </div>
         ),
-        email: "devanshv22@iitk.ac.in",
+        email: "devanshv17@gmail.com",
         linkedin: "https://www.linkedin.com/in/devanshv17/",
+        portfolio: "https://devanshv17.github.io",
         image: "/founder.jpeg"
     }
 ];
@@ -46,6 +47,9 @@ export function Founders() {
                                         {founder.bio}
                                     </div>
                                     <div className="flex justify-center md:justify-start gap-4">
+                                        <a href={founder.portfolio} target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors" aria-label="Portfolio">
+                                            <Globe className="w-5 h-5" />
+                                        </a>
                                         <a href={`mailto:${founder.email}`} className="text-gray-400 hover:text-white transition-colors" aria-label="Email">
                                             <Mail className="w-5 h-5" />
                                         </a>
