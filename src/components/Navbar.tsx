@@ -36,7 +36,7 @@ export function Navbar() {
                 {/* Left: Logo */}
                 <button onClick={scrollToTop} className="flex items-center outline-none shrink-0 pl-2">
                     <img
-                        src="/logo.png"
+                        src="/logo_dark-nobg.png"
                         alt="Inlay Logo"
                         className="h-7 md:h-8 hover:opacity-80 transition-opacity"
                     />
