@@ -62,12 +62,9 @@ export function Navbar() {
                 </div>
 
                 {/* Right: Actions */}
-                <div className="flex items-center gap-3 shrink-0">
+                <div className="flex items-center shrink-0">
                     <button onClick={() => handleScroll('waitlist')} className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-gray-200 transition-colors hidden sm:block">
                         Get Started
-                    </button>
-                    <button onClick={() => handleScroll('demo')} className="px-5 py-2 bg-white/5 text-white text-sm font-medium rounded-full border border-white/10 hover:bg-white/10 transition-colors">
-                        Book a Demo
                     </button>
                 </div>
             </nav>
