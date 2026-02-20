@@ -30,38 +30,47 @@ export function Navbar() {
     };
 
     return (
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-white/10 px-6 py-4">
-            <div className="max-w-7xl mx-auto flex items-center justify-between">
-                <button onClick={scrollToTop} className="flex items-center gap-2 outline-none">
+        <div className="fixed top-6 left-0 right-0 z-50 flex justify-center px-4 pointer-events-none">
+            <nav className="w-full max-w-5xl bg-[#1A1A1A]/90 backdrop-blur-md border border-white/10 px-4 py-2.5 rounded-full pointer-events-auto flex items-center justify-between shadow-2xl">
+
+                {/* Left: Logo */}
+                <button onClick={scrollToTop} className="flex items-center outline-none shrink-0 pl-2">
                     <img
-                        src="/logo_dark.jpeg"
+                        src="/logo.png"
                         alt="Inlay Logo"
-                        className="h-8 md:h-10 hover:opacity-80 transition-opacity mix-blend-screen"
+                        className="h-7 md:h-8 hover:opacity-80 transition-opacity"
                     />
                 </button>
 
-                <div className="hidden md:flex items-center gap-8">
-                    <button onClick={scrollToTop} className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                {/* Center: Links */}
+                <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 items-center gap-6 lg:gap-8">
+                    <button onClick={scrollToTop} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                         Home
                     </button>
-                    <button onClick={() => handleScroll('waitlist')} className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                    <button onClick={() => handleScroll('waitlist')} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                         Waitlist
                     </button>
-                    <button onClick={() => handleScroll('demo')} className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
-                        Demo
+                    <button onClick={() => handleScroll('demo')} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                        Docs
                     </button>
-                    <button onClick={() => handleScroll('founders')} className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
+                    <button onClick={() => handleScroll('founders')} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                         Founder
                     </button>
-                    <Link to="/investors" className="text-sm font-medium text-gray-300 hover:text-white transition-colors">
-                        For Investors
+                    <Link to="/investors" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
+                        Investors
                     </Link>
                 </div>
 
-                <button onClick={() => handleScroll('waitlist')} className="px-5 py-2 bg-primary text-white text-sm font-bold rounded-full hover:bg-primary/90 transition-all shadow-[0_0_15px_rgba(255,95,31,0.3)]">
-                    Get Started
-                </button>
-            </div>
-        </nav>
+                {/* Right: Actions */}
+                <div className="flex items-center gap-3 shrink-0">
+                    <button onClick={() => handleScroll('waitlist')} className="px-5 py-2 bg-white text-black text-sm font-bold rounded-full hover:bg-gray-200 transition-colors hidden sm:block">
+                        Get Started
+                    </button>
+                    <button onClick={() => handleScroll('demo')} className="px-5 py-2 bg-white/5 text-white text-sm font-medium rounded-full border border-white/10 hover:bg-white/10 transition-colors">
+                        Book a Demo
+                    </button>
+                </div>
+            </nav>
+        </div>
     );
 }
