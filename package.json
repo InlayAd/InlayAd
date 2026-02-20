@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://inlayad.github.io/InlayAd",
+  "homepage": "https://www.inlayad.com",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
