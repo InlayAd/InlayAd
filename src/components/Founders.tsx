@@ -5,15 +5,15 @@ const founders = [
         name: "Devansh Verma",
         role: "Founder",
         bio: (
-            <div className="space-y-3">
+            <div className="space-y-4">
                 <p>
-                    <strong>4th year UG at IIT Kanpur</strong> (Math & Scientific Computing). Previously built data infrastructure scaling to <strong>15cr+ households</strong> for the Government of India (Jal Jeevan Mission).
+                    I'm an engineer at heart—I obsess over building intelligent systems that scale and impact millions. Currently completing my 4th year in Math & Scientific Computing at IIT Kanpur.
                 </p>
                 <p>
-                    Creator of SuperLiving, a solo-engineered platform successfully scaled to <strong>50k+ users</strong>. Ranked the <strong>#1 trading intern</strong> at Axxela, leveraging Deep Learning (LSTM & XGBoost) to aggressively optimize quantitative strategies.
+                    Before Inlay, I architected data infrastructure scaling to <strong>15cr+ households</strong> for the Indian Government, and single-handedly built and scaled a consumer platform to <strong>50k+ users</strong>. I've also spent time deep in the weeds of quant trading, leveraging Deep Learning (LSTM & XGBoost) to aggressively optimize quantitative strategies.
                 </p>
                 <p>
-                    Deeply passionate about AI systems, specializing in robust multi-agent deployments, LLM optimization, and autonomous infrastructure.
+                    Now, I am combining my deep expertise in AI systems, robust multi-agent deployments, and LLM optimization to completely reinvent how brands connect with creators.
                 </p>
             </div>
         ),
@@ -28,7 +28,7 @@ export function Founders() {
     return (
         <section className="py-24 px-4 bg-background" id="founders">
             <div className="max-w-5xl mx-auto">
-                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Meet the <span className="text-primary">Builders</span></h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-center mb-4">Meet the <span className="text-primary">Founder</span></h2>
                 <p className="text-center text-gray-400 mb-16">Built at IIT Kanpur</p>
 
                 <div className="max-w-2xl mx-auto">
