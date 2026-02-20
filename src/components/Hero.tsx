@@ -2,10 +2,10 @@ import { ArrowRight } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 export function Hero() {
-    const scrollToContact = () => {
-        const contactSection = document.getElementById('contact');
-        if (contactSection) {
-            contactSection.scrollIntoView({ behavior: 'smooth' });
+    const scrollToWaitlist = () => {
+        const waitlistSection = document.getElementById('waitlist');
+        if (waitlistSection) {
+            waitlistSection.scrollIntoView({ behavior: 'smooth' });
         }
     };
 
@@ -37,7 +37,7 @@ export function Hero() {
                     transition={{ duration: 0.8, delay: 0.2 }}
                 >
                     <button
-                        onClick={scrollToContact}
+                        onClick={scrollToWaitlist}
                         className="group relative inline-flex items-center gap-2 px-8 py-4 bg-primary text-white text-lg font-semibold rounded-full overflow-hidden transition-all hover:bg-primary/90 hover:scale-105 active:scale-95 shadow-[0_0_20px_rgba(255,95,31,0.3)] hover:shadow-[0_0_30px_rgba(255,95,31,0.5)]"
                     >
                         Join the Waitlist

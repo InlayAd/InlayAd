@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#121212", // Deep Charcoal
+        background: "#0A0A0A", // Rich Dark Charcoal
         primary: "#FF5F1F",    // Electric Safety Orange
         card: "#1E1E1E",       // Slate Gray
       },

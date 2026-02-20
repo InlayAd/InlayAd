@@ -20,7 +20,7 @@ export function TechShowcase() {
                 >
                     <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-transparent opacity-20 pointer-events-none" />
 
-                    <iframe
+                    {/* <iframe
                         width="100%"
                         height="100%"
                         src="https://www.youtube.com/embed/dQw4w9WgXcQ?controls=0&rel=0&autoplay=1&mute=1&loop=1&playlist=dQw4w9WgXcQ"
@@ -29,7 +29,10 @@ export function TechShowcase() {
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                         className="w-full h-full object-cover"
-                    ></iframe>
+                    ></iframe> */}
+                    <div className="w-full h-full flex flex-col items-center justify-center bg-card/50 border border-white/5">
+                        <p className="text-gray-400 font-medium">Interactive Demo Coming Soon</p>
+                    </div>
                 </motion.div>
 
                 {/* Tech Specs */}
