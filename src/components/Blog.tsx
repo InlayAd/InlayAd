@@ -5,8 +5,8 @@ import { useState } from 'react';
 const insights = [
     {
         id: 'gaussian-splatting-ads',
-        title: "How 3D Gaussian Splatting is Changing Video Advertising",
-        excerpt: "Traditional product placement requires physical logistics — shipping products, coordinating shoots, and weeks of post-production. 3D Gaussian Splatting eliminates all of that.",
+        title: "How 3D Gaussian Splatting is Changing Short-Form Video Advertising",
+        excerpt: "Traditional product placement requires physical logistics — shipping products, coordinating shoots, and weeks of post-production. 3D Gaussian Splatting eliminates all of that for Reels, Shorts, and TikTok.",
         content: `The advertising industry is at an inflection point. Traditional product placement requires physical logistics — shipping products, coordinating shoots, and weeks of post-production. 3D Gaussian Splatting (3DGS) eliminates all of that by reconstructing photorealistic 3D scenes from standard 2D images.
 
 Unlike traditional polygon-mesh 3D modeling, 3DGS uses millions of tiny light-emitting points (Gaussians) to represent objects with stunning fidelity. The result? Photorealistic product assets that can be rendered in real-time at under 20ms latency — fast enough for live video.
@@ -19,7 +19,7 @@ Early adopters like Zillow and Monks are already using 3DGS for e-commerce visua
 
 The future of advertising isn't interruption — it's integration. And 3D Gaussian Splatting is the technology that makes it possible at scale.`,
         readTime: "5 min read",
-        tags: ["3D Gaussian Splatting", "Ad Tech", "Computer Vision"],
+        tags: ["3D Gaussian Splatting", "Short-Form Video Ads", "Computer Vision"],
         date: "Feb 2026"
     },
     {
@@ -41,7 +41,7 @@ At InlayAd, we're building this future. Our autonomous AI handles the entire pip
 
 The shift from intrusive to invisible advertising isn't coming — it's already here.`,
         readTime: "4 min read",
-        tags: ["Creator Economy", "Non-Intrusive Ads", "Influencer Marketing"],
+        tags: ["Creator Economy", "Non-Intrusive Ads", "Short-Form Content"],
         date: "Feb 2026"
     },
     {
@@ -72,7 +72,7 @@ For creators, this means passive income from existing content. Our 80% creator p
 
 The era of logistics-heavy brand deals is ending. Welcome to autonomous advertising.`,
         readTime: "6 min read",
-        tags: ["Brand Deals", "Automation", "Micro-Influencers"],
+        tags: ["Brand Deals", "Reels & Shorts", "Micro-Influencers"],
         date: "Feb 2026"
     }
 ];
@@ -95,7 +95,7 @@ export function Blog() {
                         The Future of <span className="text-primary">Ad Tech</span>
                     </h2>
                     <p className="text-gray-400 max-w-2xl mx-auto">
-                        Explore how autonomous AI, 3D Gaussian Splatting, and the creator economy are converging to reinvent advertising.
+                        Explore how autonomous AI, 3D Gaussian Splatting, and the creator economy are converging to reinvent short-form video advertising across Reels, Shorts & TikTok.
                     </p>
                 </div>
 

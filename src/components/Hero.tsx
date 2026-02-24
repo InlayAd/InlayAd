@@ -21,13 +21,13 @@ export function Hero() {
                     transition={{ duration: 0.8 }}
                 >
                     <span className="inline-block px-4 py-1.5 mb-6 text-sm font-medium tracking-wider text-primary bg-primary/10 rounded-full border border-primary/20">
-                        INDUSTRIAL AD-TECH
+                        SHORT-FORM VIDEO AD-TECH
                     </span>
                     <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight mb-6">
                         Making advertising <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-gray-400">invisible</span>, <span className="text-primary">scalable</span>, and profitable.
                     </h1>
                     <p className="text-xl text-gray-400 max-w-2xl mx-auto leading-relaxed">
-                        We turn video pixels into premium ad real estate. Non-intrusive for viewers, zero-effort for creators.
+                        We turn short-form video pixels into premium ad real estate. AI-powered product placement for Reels, Shorts & TikTok — non-intrusive for viewers, zero-effort for creators.
                     </p>
                 </motion.div>
 
