@@ -1,4 +1,4 @@
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -62,9 +62,6 @@ export function Navbar() {
                         <button onClick={() => handleScroll('founders')} className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
                             Founder
                         </button>
-                        <Link to="/investors" className="text-sm font-medium text-gray-400 hover:text-white transition-colors">
-                            Investors
-                        </Link>
                     </div>
 
                     {/* Right: Desktop CTA + Mobile Hamburger */}
@@ -123,9 +120,6 @@ export function Navbar() {
                                 <button onClick={() => handleScroll('founders')} className="text-left text-lg font-medium text-gray-300 hover:text-white transition-colors py-2 border-b border-white/5">
                                     Founder
                                 </button>
-                                <Link to="/investors" onClick={() => setMobileMenuOpen(false)} className="text-left text-lg font-medium text-gray-300 hover:text-white transition-colors py-2 border-b border-white/5">
-                                    Investors
-                                </Link>
                                 <button
                                     onClick={() => handleScroll('waitlist')}
                                     className="mt-2 w-full py-3 bg-primary text-white font-bold rounded-full hover:bg-primary/90 transition-colors shadow-[0_0_15px_rgba(255,95,31,0.3)]"

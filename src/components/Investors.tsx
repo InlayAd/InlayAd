@@ -1,6 +1,15 @@
 import { IndianRupee, PieChart, Send, Download } from 'lucide-react';
+import { useEffect } from 'react';
 
 export function Investors() {
+    // Prevent search engines from indexing this page
+    useEffect(() => {
+        const meta = document.createElement('meta');
+        meta.name = 'robots';
+        meta.content = 'noindex, nofollow';
+        document.head.appendChild(meta);
+        return () => { document.head.removeChild(meta); };
+    }, []);
     return (
         <section className="py-24 px-4 bg-card/30 border-y border-white/5 relative z-10" id="investors">
             <div className="max-w-6xl mx-auto space-y-16">
