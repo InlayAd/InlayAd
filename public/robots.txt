@@ -1,4 +1,18 @@
+# InlayAd - robots.txt
+# https://inlayad.com
+
 User-agent: *
 Allow: /
+Disallow: /assets/*.map
+
+# Googlebot
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bingbot
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
 
 Sitemap: https://inlayad.com/sitemap.xml

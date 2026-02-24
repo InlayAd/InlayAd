@@ -72,7 +72,7 @@ export function BenefitsAndWaitlist() {
                         <div className="bg-card p-8 rounded-3xl border border-white/5 relative group">
                             <div className="absolute inset-0 bg-white/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                             <h3 className="text-2xl font-bold mb-6">Brand Waitlist</h3>
-                            <form className="space-y-4 relative z-10" action="https://api.web3forms.com/submit" method="POST">
+                            <form className="space-y-4 relative z-10" action="https://api.web3forms.com/submit" method="POST" aria-label="Brand waitlist signup form">
                                 <input type="hidden" name="access_key" value="4a149625-57f6-422a-bb63-027d9e13c68c" />
                                 <input type="hidden" name="subject" value="New Brand Waitlist Submission" />
                                 <input type="hidden" name="role" value="brand" />
@@ -113,7 +113,7 @@ export function BenefitsAndWaitlist() {
                         <div className="bg-card p-8 rounded-3xl border border-white/5 relative group">
                             <div className="absolute inset-0 bg-primary/5 rounded-3xl opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none" />
                             <h3 className="text-2xl font-bold mb-6">Creator Waitlist</h3>
-                            <form className="space-y-4 relative z-10" action="https://api.web3forms.com/submit" method="POST">
+                            <form className="space-y-4 relative z-10" action="https://api.web3forms.com/submit" method="POST" aria-label="Creator waitlist signup form">
                                 <input type="hidden" name="access_key" value="4a149625-57f6-422a-bb63-027d9e13c68c" />
                                 <input type="hidden" name="subject" value="New Creator Waitlist Submission" />
                                 <input type="hidden" name="role" value="creator" />

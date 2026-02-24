@@ -1,8 +1,9 @@
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { BenefitsAndWaitlist } from './components/BenefitsAndWaitlist';
 import { TechShowcase } from './components/TechShowcase';
+import { Blog } from './components/Blog';
 import { Founders } from './components/Founders';
 import { Investors } from './components/Investors';
 import { Roadmap } from './components/Roadmap';
@@ -13,6 +14,7 @@ function LandingPage() {
       <Hero />
       <BenefitsAndWaitlist />
       <TechShowcase />
+      <Blog />
       <Founders />
     </>
   );
@@ -29,7 +31,7 @@ function InvestorPage() {
 
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <div className="bg-background text-white font-sans selection:bg-primary/30 relative">
         <Navbar />
         <Routes>
@@ -40,7 +42,7 @@ function App() {
           <p>&copy; {new Date().getFullYear()} Inlay. All rights reserved.</p>
         </footer>
       </div>
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

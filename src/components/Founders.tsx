@@ -38,6 +38,9 @@ export function Founders() {
                                 <img
                                     src={founder.image}
                                     alt={founder.name}
+                                    loading="lazy"
+                                    width="160"
+                                    height="160"
                                     className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover shadow-[0_0_20px_rgba(255,255,255,0.05)] border-2 border-white/10"
                                 />
                                 <div className="flex-1">
