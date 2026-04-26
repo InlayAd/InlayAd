@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Local archive of old video-ads codebase (never push)
+_video-ads-archive/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
