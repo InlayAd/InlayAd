@@ -85,7 +85,7 @@ export function BenefitsAndWaitlist() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6 }}
-                        className="space-y-10"
+                        className="flex flex-col gap-10"
                     >
                         <div>
                             <h3 className="text-2xl md:text-3xl font-black mb-2">
@@ -95,7 +95,7 @@ export function BenefitsAndWaitlist() {
                             <p className="text-gray-400 text-sm">Monetize your AI app or website with zero ad-ops work.</p>
                         </div>
 
-                        <div className="space-y-5">
+                        <div className="flex-1 space-y-5">
                             {developerBenefits.map((item, idx) => {
                                 const Icon = item.icon;
                                 return (
@@ -149,7 +149,7 @@ export function BenefitsAndWaitlist() {
                         whileInView={{ opacity: 1, x: 0 }}
                         viewport={{ once: true }}
                         transition={{ duration: 0.6, delay: 0.1 }}
-                        className="space-y-10"
+                        className="flex flex-col gap-10"
                     >
                         <div>
                             <h3 className="text-2xl md:text-3xl font-black mb-2">
@@ -159,7 +159,7 @@ export function BenefitsAndWaitlist() {
                             <p className="text-gray-400 text-sm">Reach AI app users at their highest intent moment.</p>
                         </div>
 
-                        <div className="space-y-5">
+                        <div className="flex-1 space-y-5">
                             {brandBenefits.map((item, idx) => {
                                 const Icon = item.icon;
                                 return (

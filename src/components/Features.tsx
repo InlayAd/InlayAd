@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Server, MessageSquare, Layers, Code2, BarChart3, Shield } from 'lucide-react';
+import { Server, MessageSquare, Layers, Code2, BarChart3, Shield, Lock } from 'lucide-react';
 
 const fadeUp = {
     initial: { opacity: 0, y: 24 },
@@ -193,6 +193,40 @@ export function Features() {
                                     style={{ boxShadow: 'inset 0 1px 1px rgba(255,255,255,0.04)' }}>
                                     <div className={`text-2xl font-black ${stat.color}`}>{stat.value}</div>
                                     <div className="text-xs text-gray-500 mt-0.5 leading-tight">{stat.label}</div>
+                                </div>
+                            ))}
+                        </div>
+                    </motion.div>
+
+                    {/* Privacy by Design */}
+                    <motion.div
+                        {...fadeUp}
+                        transition={{ duration: 0.6, delay: 0.4 }}
+                        className="bento-cell group hover:border-yellow-400/20 transition-all duration-300"
+                    >
+                        <div className="flex items-center gap-3 mb-6">
+                            <div className="w-10 h-10 rounded-xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center">
+                                <Lock className="w-5 h-5 text-yellow-400" />
+                            </div>
+                            <span className="section-label-yellow text-xs">PRIVACY FIRST</span>
+                        </div>
+
+                        <h3 className="text-2xl font-black mb-3">
+                            Privacy by<br />Design
+                        </h3>
+                        <p className="text-gray-400 mb-6 text-sm leading-relaxed">
+                            UMP builds user models with differential privacy — no PII stored, no cookies required. GDPR and DPDP compliant out of the box.
+                        </p>
+
+                        <div className="space-y-2">
+                            {[
+                                { label: 'No PII stored', color: 'text-yellow-400' },
+                                { label: 'Differential privacy', color: 'text-yellow-400' },
+                                { label: 'Cookie-free targeting', color: 'text-yellow-400' },
+                            ].map(item => (
+                                <div key={item.label} className="flex items-center gap-2.5">
+                                    <div className="w-1.5 h-1.5 rounded-full bg-yellow-400 shrink-0" />
+                                    <span className={`text-sm font-medium ${item.color}`}>{item.label}</span>
                                 </div>
                             ))}
                         </div>
