@@ -1,7 +1,14 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ArrowUpRight, BookOpen, FlaskConical, Brain, Shield, Cpu, BarChart3, Link2 } from 'lucide-react';
 
 export function ResearchPage() {
+    useEffect(() => {
+        document.title = 'Research | InlayAd — Universal Memory Protocol (UMP)';
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute('href', 'https://inlayad.com/research');
+    }, []);
+
     return (
         <main className="pt-28 pb-24 px-4 bg-black min-h-screen">
             <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />

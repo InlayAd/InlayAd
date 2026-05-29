@@ -1,4 +1,5 @@
 import { useParams, Link, Navigate } from 'react-router-dom';
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Tag, ArrowLeft, ArrowRight } from 'lucide-react';
 import { blogPosts, getPostBySlug, type BlogSection } from '../data/blogPosts';
@@ -55,6 +56,15 @@ function renderSection(section: BlogSection, idx: number) {
 export function BlogPost() {
     const { slug } = useParams<{ slug: string }>();
     const post = slug ? getPostBySlug(slug) : undefined;
+
+    useEffect(() => {
+        if (!post) return;
+        document.title = post.seoTitle;
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute('href', `https://inlayad.com/blog/${post.slug}`);
+        const desc = document.querySelector('meta[name="description"]');
+        if (desc) desc.setAttribute('content', post.seoDescription);
+    }, [post]);
 
     if (!post) return <Navigate to="/blog" replace />;
 

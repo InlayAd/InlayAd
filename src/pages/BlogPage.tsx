@@ -1,9 +1,16 @@
+import { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Clock, Tag, ArrowRight } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { blogPosts } from '../data/blogPosts';
 
 export function BlogPage() {
+    useEffect(() => {
+        document.title = 'Blog | InlayAd — AI Advertising Insights';
+        const canonical = document.querySelector('link[rel="canonical"]');
+        if (canonical) canonical.setAttribute('href', 'https://inlayad.com/blog');
+    }, []);
+
     return (
         <main className="pt-28 pb-24 px-4 bg-black min-h-screen">
             <div className="absolute inset-0 grid-bg pointer-events-none opacity-40" />
